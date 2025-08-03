@@ -1,4 +1,6 @@
-# Retro Terminal Portfolio
+<img width="1304" height="1354" alt="terminal1" src="https://github.com/user-attachments/assets/db9d4f31-d061-40e8-9f82-3936ca0f848b" />
+
+# Retro Terminal Portfolio Website
 
 A retro-styled terminal portfolio website built with Next.js, featuring interactive terminal commands, CRT monitor effects, and nostalgic aesthetics.
 
