@@ -1,0 +1,54 @@
+/* Scrollbar utilities */
+.scrollbar-thin {
+  scrollbar-width: auto;
+  scrollbar-color: #00ff00 #001100;
+}
+
+.scrollbar-thumb-green-600 {
+  scrollbar-color: #00ff00 #001100;
+}
+
+/* Force retro pixelated scrollbar styling */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+  background-color: #001100;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #001100;
+  border: 2px solid #00ff00;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ff00;
+  border: 2px solid #00ff00;
+  border-radius: 0;
+  background-image: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00aa00;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #001100;
+  border: 2px solid #00ff00;
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #001100;
+  border: 2px solid #00ff00;
+}
+
+/* Hide scrollbar buttons for cleaner retro look */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #00ff00 #001100;
+}

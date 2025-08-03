@@ -1,0 +1,63 @@
+/* Custom retro terminal scrollbar */
+.terminal-scrollbar::-webkit-scrollbar {
+  width: 20px;
+  background-color: #001100;
+}
+
+.terminal-scrollbar::-webkit-scrollbar-track {
+  background-color: #001100;
+  border-left: 2px solid #00ff00;
+  border-right: 2px solid #00ff00;
+}
+
+.terminal-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #00ff00;
+  border: 2px solid #00ff00;
+  border-radius: 0;
+}
+
+.terminal-scrollbar {
+  scrollbar-width: auto;
+  scrollbar-color: #00ff00 #001100;
+}
+
+.terminal-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.crt-curvature {
+  position: relative;
+}
+
+.crt-curvature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    transparent 15%,
+    transparent 85%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.crt-curvature > div {
+  transition: transform 0.1s ease-out;
+  transform-origin: center;
+  line-height: 1;
+}
